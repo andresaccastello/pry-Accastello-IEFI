@@ -21,6 +21,8 @@ namespace pry_Accastello_IEFI
 
         private void frmTareas_Load(object sender, EventArgs e)
         {
+            txtComentario.Width = 200;
+            txtComentario.Height = 100;
             dtFecha.MaxDate = DateTime.Today;
             DataTable tarea = objConexion.ObtenerCombos("Tarea");
 
@@ -89,6 +91,63 @@ namespace pry_Accastello_IEFI
             cmbTarea.SelectedIndex = -1;
             cmbLugar.SelectedIndex = -1;
             dtFecha.Value = DateTime.Today;
+        }
+
+        private void btnCargarCompleta_Click(object sender, EventArgs e)
+        {
+            int tarea = Convert.ToInt32(cmbTarea.SelectedValue);
+            int lugar = Convert.ToInt32(cmbLugar.SelectedValue);
+            string fecha = dtFecha.Value.ToString("dd/MM/yyyy");
+            string tiempo = "";
+            string comentario = txtComentario.Text;
+            string pago = "";
+            if (optTiempoLargo.Checked)
+            {
+                tiempo = "Duracion: Prolongada";
+
+            }
+            else if (optTiempoCorto.Checked) 
+            {
+                tiempo = "Duracion: Corta";
+
+            }
+
+            if (optEfectuado.Checked)
+            {
+                pago = "Pago: Efectuado";
+
+            }
+            else if (optPendiente.Checked) 
+            {
+                pago = "Pago : Pendiente";
+            }
+            if (string.IsNullOrWhiteSpace(txtComentario.Text))
+            {
+                MessageBox.Show("El campo Comentario no puede estar vacío.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+
+            objConexion.InsertarTareaCompleta(
+                tarea,
+                lugar,
+                fecha,
+                tiempo,
+                pago,
+                comentario,"TareaCompleta");
+            dgvGrilla.DataSource = objConexion.ObtenerDatosTabla("TareaCompleta");
+
+        }
+
+        private void btnCancelar2_Click(object sender, EventArgs e)
+        {
+            cmbTarea.SelectedIndex = -1;
+            cmbLugar.SelectedIndex = -1;
+            dtFecha.Value = DateTime.Today;
+            txtComentario.Text = "";
+            optTiempoLargo.Checked= true;
+            optEfectuado.Checked= true;
         }
     }
 }

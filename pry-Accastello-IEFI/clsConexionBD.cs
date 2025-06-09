@@ -216,6 +216,33 @@ namespace pry_Accastello_IEFI
                 MessageBox.Show("Error al insertar: " + ex.Message);
             }
         }
+        public void InsertarTareaCompleta(int tarea, int lugar, string fecha, string tiempo,string pago,string comentario, string nombreTabla)
+        {
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+                {
+                    string consulta = $@"
+                INSERT INTO {nombreTabla} (Tarea, Lugar, Fecha)
+                VALUES (@Tarea, @Lugar, @Fecha)";
+
+                    using (SqlCommand comando = new SqlCommand(consulta, conexion))
+                    {
+                        comando.Parameters.AddWithValue("@Tarea", tarea);
+                        comando.Parameters.AddWithValue("@Lugar", lugar);
+                        comando.Parameters.AddWithValue("@Fecha", fecha);
+
+                        conexion.Open();
+                        comando.ExecuteNonQuery();
+                        MessageBox.Show($"{nombreTabla} insertado correctamente.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al insertar: " + ex.Message);
+            }
+        }
     }
 
 }
