@@ -128,11 +128,12 @@ namespace pry_Accastello_IEFI
             }
         }
 
-        public DataTable BuscarProductoPorId(int id)
+        public DataTable BuscarProductoPorId(int id, string nombredetabla)
         {
             using (SqlConnection con = new SqlConnection(cadenaConexion))
             {
-                string query = "SELECT * FROM Usuarios WHERE Id = @id";
+                string query = $"SELECT * FROM {nombredetabla} WHERE Id = @id";
+                ;
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
                     cmd.Parameters.AddWithValue("@id", id);
@@ -216,21 +217,23 @@ namespace pry_Accastello_IEFI
                 MessageBox.Show("Error al insertar: " + ex.Message);
             }
         }
-        public void InsertarTareaCompleta(int tarea, int lugar, string fecha, string tiempo,string pago,string comentario, string nombreTabla)
+        public void InsertarTareaCompleta(int tarea, int lugar, string fecha, string detalle, string comentario, string nombreTabla)
         {
             try
             {
                 using (SqlConnection conexion = new SqlConnection(cadenaConexion))
                 {
                     string consulta = $@"
-                INSERT INTO {nombreTabla} (Tarea, Lugar, Fecha)
-                VALUES (@Tarea, @Lugar, @Fecha)";
+                INSERT INTO {nombreTabla} (Tarea, Lugar, Fecha, Detalle, Comentario)
+                VALUES (@Tarea, @Lugar, @Fecha, @Detalle, @Comentario)";
 
                     using (SqlCommand comando = new SqlCommand(consulta, conexion))
                     {
                         comando.Parameters.AddWithValue("@Tarea", tarea);
                         comando.Parameters.AddWithValue("@Lugar", lugar);
                         comando.Parameters.AddWithValue("@Fecha", fecha);
+                        comando.Parameters.AddWithValue("@Detalle", detalle);
+                        comando.Parameters.AddWithValue("@Comentario", comentario);
 
                         conexion.Open();
                         comando.ExecuteNonQuery();

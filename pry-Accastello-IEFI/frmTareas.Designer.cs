@@ -55,6 +55,13 @@
             this.btnAgregarTarea = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.dgvGrilla2 = new System.Windows.Forms.DataGridView();
+            this.grbID = new System.Windows.Forms.GroupBox();
+            this.numBuscarId = new System.Windows.Forms.NumericUpDown();
+            this.lblID = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnDesacer = new System.Windows.Forms.Button();
+            this.cmbTabla = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.grbPago.SuspendLayout();
@@ -65,6 +72,8 @@
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla2)).BeginInit();
+            this.grbID.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numBuscarId)).BeginInit();
             this.SuspendLayout();
             // 
             // txtComentario
@@ -139,7 +148,7 @@
             this.groupBox2.Controls.Add(this.btnCargarCompleta);
             this.groupBox2.Location = new System.Drawing.Point(12, 252);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(443, 203);
+            this.groupBox2.Size = new System.Drawing.Size(475, 203);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Especificaciones";
@@ -213,9 +222,9 @@
             this.btnAgregarG.BackColor = System.Drawing.Color.GreenYellow;
             this.btnAgregarG.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarG.Image")));
             this.btnAgregarG.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAgregarG.Location = new System.Drawing.Point(332, 197);
+            this.btnAgregarG.Location = new System.Drawing.Point(244, 100);
             this.btnAgregarG.Name = "btnAgregarG";
-            this.btnAgregarG.Size = new System.Drawing.Size(106, 40);
+            this.btnAgregarG.Size = new System.Drawing.Size(146, 40);
             this.btnAgregarG.TabIndex = 15;
             this.btnAgregarG.Text = "AGREGAR";
             this.btnAgregarG.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -232,7 +241,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.dgvGrilla);
             this.groupBox1.Controls.Add(this.groupBox7);
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox5);
@@ -240,7 +248,7 @@
             this.groupBox1.Controls.Add(this.btnAgregarG);
             this.groupBox1.Location = new System.Drawing.Point(12, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(443, 243);
+            this.groupBox1.Size = new System.Drawing.Size(475, 243);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cargar tarea";
@@ -253,12 +261,12 @@
             this.dgvGrilla.AllowUserToResizeColumns = false;
             this.dgvGrilla.AllowUserToResizeRows = false;
             this.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGrilla.Location = new System.Drawing.Point(215, 80);
+            this.dgvGrilla.Location = new System.Drawing.Point(493, 3);
             this.dgvGrilla.MultiSelect = false;
             this.dgvGrilla.Name = "dgvGrilla";
             this.dgvGrilla.ReadOnly = true;
             this.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGrilla.Size = new System.Drawing.Size(222, 115);
+            this.dgvGrilla.Size = new System.Drawing.Size(460, 115);
             this.dgvGrilla.TabIndex = 22;
             // 
             // groupBox7
@@ -309,7 +317,7 @@
             this.groupBox5.Controls.Add(this.cmbLugar);
             this.groupBox5.Controls.Add(this.txtNombreLugar);
             this.groupBox5.Controls.Add(this.btnAgregarTarea);
-            this.groupBox5.Location = new System.Drawing.Point(1, 150);
+            this.groupBox5.Location = new System.Drawing.Point(0, 122);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(208, 87);
             this.groupBox5.TabIndex = 21;
@@ -339,9 +347,9 @@
             this.btnCancelar.BackColor = System.Drawing.Color.LightCoral;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(215, 197);
+            this.btnCancelar.Location = new System.Drawing.Point(244, 169);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(111, 40);
+            this.btnCancelar.Size = new System.Drawing.Size(146, 40);
             this.btnCancelar.TabIndex = 20;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -356,20 +364,94 @@
             this.dgvGrilla2.AllowUserToResizeColumns = false;
             this.dgvGrilla2.AllowUserToResizeRows = false;
             this.dgvGrilla2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGrilla2.Location = new System.Drawing.Point(472, 12);
+            this.dgvGrilla2.Location = new System.Drawing.Point(503, 188);
             this.dgvGrilla2.MultiSelect = false;
             this.dgvGrilla2.Name = "dgvGrilla2";
             this.dgvGrilla2.ReadOnly = true;
             this.dgvGrilla2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGrilla2.Size = new System.Drawing.Size(627, 261);
+            this.dgvGrilla2.Size = new System.Drawing.Size(807, 261);
             this.dgvGrilla2.TabIndex = 23;
+            // 
+            // grbID
+            // 
+            this.grbID.BackColor = System.Drawing.SystemColors.Window;
+            this.grbID.Controls.Add(this.label1);
+            this.grbID.Controls.Add(this.cmbTabla);
+            this.grbID.Controls.Add(this.btnDesacer);
+            this.grbID.Controls.Add(this.numBuscarId);
+            this.grbID.Controls.Add(this.lblID);
+            this.grbID.Controls.Add(this.btnSalir);
+            this.grbID.Location = new System.Drawing.Point(1052, 3);
+            this.grbID.Name = "grbID";
+            this.grbID.Size = new System.Drawing.Size(208, 106);
+            this.grbID.TabIndex = 25;
+            this.grbID.TabStop = false;
+            this.grbID.Text = "Buscar TareaCompleta";
+            // 
+            // numBuscarId
+            // 
+            this.numBuscarId.Location = new System.Drawing.Point(41, 27);
+            this.numBuscarId.Name = "numBuscarId";
+            this.numBuscarId.Size = new System.Drawing.Size(100, 20);
+            this.numBuscarId.TabIndex = 21;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(1, 29);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(18, 13);
+            this.lblID.TabIndex = 19;
+            this.lblID.Text = "ID";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.Location = new System.Drawing.Point(147, 13);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(52, 45);
+            this.btnSalir.TabIndex = 17;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnDesacer
+            // 
+            this.btnDesacer.BackColor = System.Drawing.Color.DarkOrchid;
+            this.btnDesacer.Image = ((System.Drawing.Image)(resources.GetObject("btnDesacer.Image")));
+            this.btnDesacer.Location = new System.Drawing.Point(147, 60);
+            this.btnDesacer.Name = "btnDesacer";
+            this.btnDesacer.Size = new System.Drawing.Size(52, 45);
+            this.btnDesacer.TabIndex = 26;
+            this.btnDesacer.UseVisualStyleBackColor = false;
+            this.btnDesacer.Click += new System.EventHandler(this.btnDesacer_Click);
+            // 
+            // cmbTabla
+            // 
+            this.cmbTabla.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTabla.FormattingEnabled = true;
+            this.cmbTabla.Location = new System.Drawing.Point(41, 65);
+            this.cmbTabla.Name = "cmbTabla";
+            this.cmbTabla.Size = new System.Drawing.Size(100, 21);
+            this.cmbTabla.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Tabla";
             // 
             // frmTareas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1111, 456);
+            this.ClientSize = new System.Drawing.Size(1370, 471);
+            this.Controls.Add(this.grbID);
+            this.Controls.Add(this.dgvGrilla);
             this.Controls.Add(this.dgvGrilla2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -391,6 +473,9 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla2)).EndInit();
+            this.grbID.ResumeLayout(false);
+            this.grbID.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numBuscarId)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -422,5 +507,12 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.DataGridView dgvGrilla;
         private System.Windows.Forms.DataGridView dgvGrilla2;
+        private System.Windows.Forms.GroupBox grbID;
+        private System.Windows.Forms.NumericUpDown numBuscarId;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnDesacer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbTabla;
     }
 }

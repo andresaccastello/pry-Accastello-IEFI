@@ -32,10 +32,10 @@ namespace pry_Accastello_IEFI
             toolStripStatusLabel1.Text = "Usuario: " + nombreUsuario;
             toolStripStatusLabel2.Text = "Fecha: " + DateTime.Now.ToShortDateString();
 
-            // Ocultar herramientas si NO es admin
+            
             if (nombreUsuario.ToLower() != "admin")
             {
-                usuariosToolStripMenuItem.Visible = false; // o el ítem que quieras ocultar
+                usuariosToolStripMenuItem.Visible = false; 
             }
         }
 
@@ -67,17 +67,13 @@ namespace pry_Accastello_IEFI
                     MessageBox.Show("Error al registrar la hora de salida: " + ex.Message);
                 }
             }
+            Application.Exit();
         }
 
         private void auditoriasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmSesiones SESIONES = new frmSesiones();
             SESIONES.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
