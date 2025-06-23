@@ -35,42 +35,42 @@
             this.optPendiente = new System.Windows.Forms.RadioButton();
             this.optEfectuado = new System.Windows.Forms.RadioButton();
             this.btnCargarCompleta = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.grbPago = new System.Windows.Forms.GroupBox();
+            this.gbDetalles = new System.Windows.Forms.GroupBox();
+            this.gbComentario = new System.Windows.Forms.GroupBox();
+            this.gbPago = new System.Windows.Forms.GroupBox();
             this.btnCancelar2 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbDuracion = new System.Windows.Forms.GroupBox();
             this.cmbTarea = new System.Windows.Forms.ComboBox();
             this.cmbLugar = new System.Windows.Forms.ComboBox();
             this.btnAgregarG = new System.Windows.Forms.Button();
             this.dtFecha = new System.Windows.Forms.DateTimePicker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvGrilla = new System.Windows.Forms.DataGridView();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.gbCarga = new System.Windows.Forms.GroupBox();
+            this.gbFecha = new System.Windows.Forms.GroupBox();
+            this.gbTipo = new System.Windows.Forms.GroupBox();
             this.txtNombreTarea = new System.Windows.Forms.TextBox();
             this.btnAgregarLugar = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.gbLugar = new System.Windows.Forms.GroupBox();
             this.txtNombreLugar = new System.Windows.Forms.TextBox();
             this.btnAgregarTarea = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.dgvGrilla = new System.Windows.Forms.DataGridView();
             this.dgvGrilla2 = new System.Windows.Forms.DataGridView();
             this.grbID = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbTabla = new System.Windows.Forms.ComboBox();
+            this.btnDesacer = new System.Windows.Forms.Button();
             this.numBuscarId = new System.Windows.Forms.NumericUpDown();
             this.lblID = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnDesacer = new System.Windows.Forms.Button();
-            this.cmbTabla = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.grbPago.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbDetalles.SuspendLayout();
+            this.gbComentario.SuspendLayout();
+            this.gbPago.SuspendLayout();
+            this.gbDuracion.SuspendLayout();
+            this.gbCarga.SuspendLayout();
+            this.gbFecha.SuspendLayout();
+            this.gbTipo.SuspendLayout();
+            this.gbLugar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla2)).BeginInit();
             this.grbID.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBuscarId)).BeginInit();
@@ -138,43 +138,43 @@
             this.btnCargarCompleta.UseVisualStyleBackColor = false;
             this.btnCargarCompleta.Click += new System.EventHandler(this.btnCargarCompleta_Click);
             // 
-            // groupBox2
+            // gbDetalles
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.groupBox4);
-            this.groupBox2.Controls.Add(this.grbPago);
-            this.groupBox2.Controls.Add(this.btnCancelar2);
-            this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.btnCargarCompleta);
-            this.groupBox2.Location = new System.Drawing.Point(12, 252);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(475, 203);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Especificaciones";
+            this.gbDetalles.BackColor = System.Drawing.Color.White;
+            this.gbDetalles.Controls.Add(this.gbComentario);
+            this.gbDetalles.Controls.Add(this.gbPago);
+            this.gbDetalles.Controls.Add(this.btnCancelar2);
+            this.gbDetalles.Controls.Add(this.gbDuracion);
+            this.gbDetalles.Controls.Add(this.btnCargarCompleta);
+            this.gbDetalles.Location = new System.Drawing.Point(12, 252);
+            this.gbDetalles.Name = "gbDetalles";
+            this.gbDetalles.Size = new System.Drawing.Size(475, 203);
+            this.gbDetalles.TabIndex = 17;
+            this.gbDetalles.TabStop = false;
+            this.gbDetalles.Text = "Especificaciones";
             // 
-            // groupBox4
+            // gbComentario
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.NavajoWhite;
-            this.groupBox4.Controls.Add(this.txtComentario);
-            this.groupBox4.Location = new System.Drawing.Point(215, 19);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 100);
-            this.groupBox4.TabIndex = 19;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Comentarios";
+            this.gbComentario.BackColor = System.Drawing.Color.NavajoWhite;
+            this.gbComentario.Controls.Add(this.txtComentario);
+            this.gbComentario.Location = new System.Drawing.Point(215, 19);
+            this.gbComentario.Name = "gbComentario";
+            this.gbComentario.Size = new System.Drawing.Size(200, 100);
+            this.gbComentario.TabIndex = 19;
+            this.gbComentario.TabStop = false;
+            this.gbComentario.Text = "Comentarios";
             // 
-            // grbPago
+            // gbPago
             // 
-            this.grbPago.BackColor = System.Drawing.Color.NavajoWhite;
-            this.grbPago.Controls.Add(this.optEfectuado);
-            this.grbPago.Controls.Add(this.optPendiente);
-            this.grbPago.Location = new System.Drawing.Point(24, 116);
-            this.grbPago.Name = "grbPago";
-            this.grbPago.Size = new System.Drawing.Size(116, 81);
-            this.grbPago.TabIndex = 20;
-            this.grbPago.TabStop = false;
-            this.grbPago.Text = "Pago";
+            this.gbPago.BackColor = System.Drawing.Color.NavajoWhite;
+            this.gbPago.Controls.Add(this.optEfectuado);
+            this.gbPago.Controls.Add(this.optPendiente);
+            this.gbPago.Location = new System.Drawing.Point(24, 116);
+            this.gbPago.Name = "gbPago";
+            this.gbPago.Size = new System.Drawing.Size(116, 81);
+            this.gbPago.TabIndex = 20;
+            this.gbPago.TabStop = false;
+            this.gbPago.Text = "Pago";
             // 
             // btnCancelar2
             // 
@@ -187,17 +187,17 @@
             this.btnCancelar2.UseVisualStyleBackColor = false;
             this.btnCancelar2.Click += new System.EventHandler(this.btnCancelar2_Click);
             // 
-            // groupBox3
+            // gbDuracion
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.NavajoWhite;
-            this.groupBox3.Controls.Add(this.optTiempoCorto);
-            this.groupBox3.Controls.Add(this.optTiempoLargo);
-            this.groupBox3.Location = new System.Drawing.Point(24, 19);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(116, 77);
-            this.groupBox3.TabIndex = 17;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Duracion";
+            this.gbDuracion.BackColor = System.Drawing.Color.NavajoWhite;
+            this.gbDuracion.Controls.Add(this.optTiempoCorto);
+            this.gbDuracion.Controls.Add(this.optTiempoLargo);
+            this.gbDuracion.Location = new System.Drawing.Point(24, 19);
+            this.gbDuracion.Name = "gbDuracion";
+            this.gbDuracion.Size = new System.Drawing.Size(116, 77);
+            this.gbDuracion.TabIndex = 17;
+            this.gbDuracion.TabStop = false;
+            this.gbDuracion.Text = "Duracion";
             // 
             // cmbTarea
             // 
@@ -238,60 +238,44 @@
             this.dtFecha.Size = new System.Drawing.Size(176, 20);
             this.dtFecha.TabIndex = 5;
             // 
-            // groupBox1
+            // gbCarga
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.groupBox7);
-            this.groupBox1.Controls.Add(this.groupBox6);
-            this.groupBox1.Controls.Add(this.groupBox5);
-            this.groupBox1.Controls.Add(this.btnCancelar);
-            this.groupBox1.Controls.Add(this.btnAgregarG);
-            this.groupBox1.Location = new System.Drawing.Point(12, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(475, 243);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cargar tarea";
+            this.gbCarga.BackColor = System.Drawing.Color.White;
+            this.gbCarga.Controls.Add(this.gbFecha);
+            this.gbCarga.Controls.Add(this.gbTipo);
+            this.gbCarga.Controls.Add(this.gbLugar);
+            this.gbCarga.Controls.Add(this.btnCancelar);
+            this.gbCarga.Controls.Add(this.btnAgregarG);
+            this.gbCarga.Location = new System.Drawing.Point(12, 3);
+            this.gbCarga.Name = "gbCarga";
+            this.gbCarga.Size = new System.Drawing.Size(475, 243);
+            this.gbCarga.TabIndex = 16;
+            this.gbCarga.TabStop = false;
+            this.gbCarga.Text = "Cargar tarea";
             // 
-            // dgvGrilla
+            // gbFecha
             // 
-            this.dgvGrilla.AllowDrop = true;
-            this.dgvGrilla.AllowUserToAddRows = false;
-            this.dgvGrilla.AllowUserToDeleteRows = false;
-            this.dgvGrilla.AllowUserToResizeColumns = false;
-            this.dgvGrilla.AllowUserToResizeRows = false;
-            this.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGrilla.Location = new System.Drawing.Point(493, 3);
-            this.dgvGrilla.MultiSelect = false;
-            this.dgvGrilla.Name = "dgvGrilla";
-            this.dgvGrilla.ReadOnly = true;
-            this.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGrilla.Size = new System.Drawing.Size(460, 115);
-            this.dgvGrilla.TabIndex = 22;
+            this.gbFecha.BackColor = System.Drawing.Color.NavajoWhite;
+            this.gbFecha.Controls.Add(this.dtFecha);
+            this.gbFecha.Location = new System.Drawing.Point(223, 19);
+            this.gbFecha.Name = "gbFecha";
+            this.gbFecha.Size = new System.Drawing.Size(200, 48);
+            this.gbFecha.TabIndex = 19;
+            this.gbFecha.TabStop = false;
+            this.gbFecha.Text = "Fecha";
             // 
-            // groupBox7
+            // gbTipo
             // 
-            this.groupBox7.BackColor = System.Drawing.Color.NavajoWhite;
-            this.groupBox7.Controls.Add(this.dtFecha);
-            this.groupBox7.Location = new System.Drawing.Point(223, 19);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(200, 48);
-            this.groupBox7.TabIndex = 19;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Fecha";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.BackColor = System.Drawing.Color.NavajoWhite;
-            this.groupBox6.Controls.Add(this.cmbTarea);
-            this.groupBox6.Controls.Add(this.txtNombreTarea);
-            this.groupBox6.Controls.Add(this.btnAgregarLugar);
-            this.groupBox6.Location = new System.Drawing.Point(1, 19);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(208, 87);
-            this.groupBox6.TabIndex = 19;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Tipo";
+            this.gbTipo.BackColor = System.Drawing.Color.NavajoWhite;
+            this.gbTipo.Controls.Add(this.cmbTarea);
+            this.gbTipo.Controls.Add(this.txtNombreTarea);
+            this.gbTipo.Controls.Add(this.btnAgregarLugar);
+            this.gbTipo.Location = new System.Drawing.Point(1, 19);
+            this.gbTipo.Name = "gbTipo";
+            this.gbTipo.Size = new System.Drawing.Size(208, 87);
+            this.gbTipo.TabIndex = 19;
+            this.gbTipo.TabStop = false;
+            this.gbTipo.Text = "Tipo";
             // 
             // txtNombreTarea
             // 
@@ -311,18 +295,18 @@
             this.btnAgregarLugar.UseVisualStyleBackColor = false;
             this.btnAgregarLugar.Click += new System.EventHandler(this.btnAgregarLugar_Click);
             // 
-            // groupBox5
+            // gbLugar
             // 
-            this.groupBox5.BackColor = System.Drawing.Color.NavajoWhite;
-            this.groupBox5.Controls.Add(this.cmbLugar);
-            this.groupBox5.Controls.Add(this.txtNombreLugar);
-            this.groupBox5.Controls.Add(this.btnAgregarTarea);
-            this.groupBox5.Location = new System.Drawing.Point(0, 122);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(208, 87);
-            this.groupBox5.TabIndex = 21;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Lugar";
+            this.gbLugar.BackColor = System.Drawing.Color.NavajoWhite;
+            this.gbLugar.Controls.Add(this.cmbLugar);
+            this.gbLugar.Controls.Add(this.txtNombreLugar);
+            this.gbLugar.Controls.Add(this.btnAgregarTarea);
+            this.gbLugar.Location = new System.Drawing.Point(0, 122);
+            this.gbLugar.Name = "gbLugar";
+            this.gbLugar.Size = new System.Drawing.Size(208, 87);
+            this.gbLugar.TabIndex = 21;
+            this.gbLugar.TabStop = false;
+            this.gbLugar.Text = "Lugar";
             // 
             // txtNombreLugar
             // 
@@ -356,6 +340,22 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // dgvGrilla
+            // 
+            this.dgvGrilla.AllowDrop = true;
+            this.dgvGrilla.AllowUserToAddRows = false;
+            this.dgvGrilla.AllowUserToDeleteRows = false;
+            this.dgvGrilla.AllowUserToResizeColumns = false;
+            this.dgvGrilla.AllowUserToResizeRows = false;
+            this.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGrilla.Location = new System.Drawing.Point(493, 3);
+            this.dgvGrilla.MultiSelect = false;
+            this.dgvGrilla.Name = "dgvGrilla";
+            this.dgvGrilla.ReadOnly = true;
+            this.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvGrilla.Size = new System.Drawing.Size(460, 115);
+            this.dgvGrilla.TabIndex = 22;
+            // 
             // dgvGrilla2
             // 
             this.dgvGrilla2.AllowDrop = true;
@@ -386,7 +386,36 @@
             this.grbID.Size = new System.Drawing.Size(208, 106);
             this.grbID.TabIndex = 25;
             this.grbID.TabStop = false;
-            this.grbID.Text = "Buscar TareaCompleta";
+            this.grbID.Text = "Buscar por Tarea";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Tabla";
+            // 
+            // cmbTabla
+            // 
+            this.cmbTabla.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTabla.FormattingEnabled = true;
+            this.cmbTabla.Location = new System.Drawing.Point(41, 65);
+            this.cmbTabla.Name = "cmbTabla";
+            this.cmbTabla.Size = new System.Drawing.Size(100, 21);
+            this.cmbTabla.TabIndex = 27;
+            // 
+            // btnDesacer
+            // 
+            this.btnDesacer.BackColor = System.Drawing.Color.DarkOrchid;
+            this.btnDesacer.Image = ((System.Drawing.Image)(resources.GetObject("btnDesacer.Image")));
+            this.btnDesacer.Location = new System.Drawing.Point(147, 60);
+            this.btnDesacer.Name = "btnDesacer";
+            this.btnDesacer.Size = new System.Drawing.Size(52, 45);
+            this.btnDesacer.TabIndex = 26;
+            this.btnDesacer.UseVisualStyleBackColor = false;
+            this.btnDesacer.Click += new System.EventHandler(this.btnDesacer_Click);
             // 
             // numBuscarId
             // 
@@ -415,35 +444,6 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // btnDesacer
-            // 
-            this.btnDesacer.BackColor = System.Drawing.Color.DarkOrchid;
-            this.btnDesacer.Image = ((System.Drawing.Image)(resources.GetObject("btnDesacer.Image")));
-            this.btnDesacer.Location = new System.Drawing.Point(147, 60);
-            this.btnDesacer.Name = "btnDesacer";
-            this.btnDesacer.Size = new System.Drawing.Size(52, 45);
-            this.btnDesacer.TabIndex = 26;
-            this.btnDesacer.UseVisualStyleBackColor = false;
-            this.btnDesacer.Click += new System.EventHandler(this.btnDesacer_Click);
-            // 
-            // cmbTabla
-            // 
-            this.cmbTabla.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTabla.FormattingEnabled = true;
-            this.cmbTabla.Location = new System.Drawing.Point(41, 65);
-            this.cmbTabla.Name = "cmbTabla";
-            this.cmbTabla.Size = new System.Drawing.Size(100, 21);
-            this.cmbTabla.TabIndex = 27;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Tabla";
-            // 
             // frmTareas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,25 +453,26 @@
             this.Controls.Add(this.grbID);
             this.Controls.Add(this.dgvGrilla);
             this.Controls.Add(this.dgvGrilla2);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbDetalles);
+            this.Controls.Add(this.gbCarga);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTareas";
             this.Text = "frmTareas";
             this.Load += new System.EventHandler(this.frmTareas_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.grbPago.ResumeLayout(false);
-            this.grbPago.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.gbDetalles.ResumeLayout(false);
+            this.gbComentario.ResumeLayout(false);
+            this.gbComentario.PerformLayout();
+            this.gbPago.ResumeLayout(false);
+            this.gbPago.PerformLayout();
+            this.gbDuracion.ResumeLayout(false);
+            this.gbDuracion.PerformLayout();
+            this.gbCarga.ResumeLayout(false);
+            this.gbFecha.ResumeLayout(false);
+            this.gbTipo.ResumeLayout(false);
+            this.gbTipo.PerformLayout();
+            this.gbLugar.ResumeLayout(false);
+            this.gbLugar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla2)).EndInit();
             this.grbID.ResumeLayout(false);
             this.grbID.PerformLayout();
@@ -487,24 +488,24 @@
         private System.Windows.Forms.RadioButton optPendiente;
         private System.Windows.Forms.RadioButton optEfectuado;
         private System.Windows.Forms.Button btnCargarCompleta;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbDetalles;
         private System.Windows.Forms.ComboBox cmbTarea;
         private System.Windows.Forms.ComboBox cmbLugar;
         private System.Windows.Forms.Button btnAgregarG;
         private System.Windows.Forms.DateTimePicker dtFecha;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbCarga;
         private System.Windows.Forms.Button btnCancelar2;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtNombreTarea;
         private System.Windows.Forms.TextBox txtNombreLugar;
         private System.Windows.Forms.Button btnAgregarTarea;
         private System.Windows.Forms.Button btnAgregarLugar;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox grbPago;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox gbDuracion;
+        private System.Windows.Forms.GroupBox gbComentario;
+        private System.Windows.Forms.GroupBox gbPago;
+        private System.Windows.Forms.GroupBox gbTipo;
+        private System.Windows.Forms.GroupBox gbLugar;
+        private System.Windows.Forms.GroupBox gbFecha;
         private System.Windows.Forms.DataGridView dgvGrilla;
         private System.Windows.Forms.DataGridView dgvGrilla2;
         private System.Windows.Forms.GroupBox grbID;

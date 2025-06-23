@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.menuStrip4 = new System.Windows.Forms.MenuStrip();
             this.tareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,14 +71,14 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // auditoriasToolStripMenuItem
             // 
             this.auditoriasToolStripMenuItem.Name = "auditoriasToolStripMenuItem";
-            this.auditoriasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.auditoriasToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.auditoriasToolStripMenuItem.Text = "Auditorias";
             this.auditoriasToolStripMenuItem.Click += new System.EventHandler(this.auditoriasToolStripMenuItem_Click);
             // 
@@ -112,6 +113,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicio";
             this.Text = "frmInicio";
             this.Load += new System.EventHandler(this.frmInicio_Load);

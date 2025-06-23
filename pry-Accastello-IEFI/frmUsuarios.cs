@@ -70,16 +70,7 @@ namespace pry_Accastello_IEFI
             }
             string Correo= txtCorreo.Text;
 
-            if (id0=0)
-            {
-                // teléfono es un número válido, podés usarlo
-            }
-            else
-            {
-                MessageBox.Show("El teléfono debe ser un número válido.");
-                txtTelefono.Focus();
-                return; // para evitar seguir con la ejecución si es inválido
-            }
+           
             objConexion.InsertarContacto(
                Nombre,
                Contraseña,
